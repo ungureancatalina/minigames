@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Rock Paper Scissors</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1> Rock-Paper-Scissor Game</h1>
+
+        <div class="choice">
+            <button onclick="play('rock')">
+                <img src="im1.jpg" />
+            </button>
+            <button onclick="play('paper')">
+                <img src="im3.jpg" />
+            </button>
+            <button onclick="play('scissors')">
+                <img src="im2.jpg" />
+            </button>
+        </div>
+
+        <div id="Player">
+            Player:
+        </div>
+        <div id="Computer">
+            Computer:
+        </div>
+        <div id="Result">
+        </div>
+
+        <div class="score"> Player Score:
+            <span id="PlayerScore"> 0 </span>
+        </div>
+        <div class="score"> Computer Score:
+            <span id="ComputerScore"> 0 </span>
+        </div>
+
+        <div id="WinnerButton">
+            <a href="xo.html" class="start-button">Play Tic-Tac-Toe</a>
+        </div>
+
+        <div id="RestartButton">
+            <button onclick="restartGame()">Restart Game</button>
+        </div>
+
+        <script src="rps.js"></script>
+    </body>
+</html>
