@@ -70,7 +70,13 @@ function checkMatch() {
             result.textContent = "Player wins!";
             result.classList.add("purpleText");
             result.style.display = "block";
-            restartButton.style.display = "block";
+            
+            // Check moves count
+            if (movesCount > 14) {
+                restartButton.style.display = "block";
+            } else {
+                window.location.href = "puzzle.html";  
+            }
         }
     } else {
         setTimeout(() => {
